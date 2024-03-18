@@ -11,7 +11,7 @@ import CoreLocation
 class LocationHandler: NSObject, CLLocationManagerDelegate, ObservableObject {
     let manager = CLLocationManager()
     let geocoder = CLGeocoder()
-    @Published var lastKnownLocation: String = String()
+    @Published var lastKnownLocation: String = ""
     
     override init() {
         super.init()
